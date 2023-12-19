@@ -4,6 +4,7 @@ if score = null  and if you convert it into number it will show zero
 if score = undefined  , it will show nan
 if score =true , it will show 1
 if score ="any string " it will give nan
+if we convert empty parenthesis into boolean it gives zero
 
 */
 
