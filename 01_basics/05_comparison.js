@@ -18,5 +18,4 @@ console.log(null>=0)
 //undefined ka har tarah ka  comparison zero k sath false deta ha
 
 //=== strict check for reference look down
-
 console.log("2"===2)
