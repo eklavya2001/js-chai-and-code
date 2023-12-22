@@ -14,3 +14,19 @@ console.log(anotherId)
 let check = (id===anotherId)//ye false aayega, bcoz symbol use  hi tabhi hota h jab humko ek unique value chaiye.
 console.log(check)
 
+let arr = ["cat", "dog", "tiger"]
+let x =(typeof arr)
+console.log(x)
+
+let fn = function abc(){console.log("baigan")}
+let y=(typeof fn)
+console.log(y)//ye function dega, more like a object function
+
+let obj={name:"monu", id:540, car:'ciaz'}
+let z = (typeof obj)
+console.log(z)
+
+
+/*
+jitna bhi non-primitive ha uska typeof object hi milta ha and for primitive use documentation
+ */
