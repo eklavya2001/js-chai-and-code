@@ -60,3 +60,34 @@ console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser)) //array k andar array hoga with all the different keys and values in different arrays
 console.log(tinderUser.hasOwnProperty('isLoggedIn'
 ))
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+                                                      // destructuring of objects
+const course={
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"eklavya"
+
+}
+// course.courseInstructor
+
+const{courseInstructor}=course
+console.log(courseInstructor)
+
+const{coursename:name}=course//is tarah se object ko destructure hota ha
+console.log(name)
+
+/* api pehle xml format me aata tha lekin ab json format me aata ha(kbhi kbhi array ka form me bhi milta ha) , json ek object(object has a name) hi ha jise hum bad me kisi value me store karke usse data nikalte ha
+{
+"name": "eklavya mishra"
+"id":"24092001"
+}                                  ye kuch nahi ek tarah ka json hi ha
+
+
+[
+    {},
+    {},           ye bhi ek tarah ka api format ha  jo array k form me ha
+    {}
+]
+*/
+
