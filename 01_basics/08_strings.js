@@ -33,7 +33,7 @@ let x = new String('eklavay-kumar-mishra')
 let y = new String('mayank     kumar     mishra')// hum chahte h ki ye teeno letter alag ho jaye upar me with respect to dash and niche me space
 
 console.log(x.split('-'))
-console.log(y.split('     '))//gap ka length ekdam specifically dena ha just like yaha 5 ha
+console.log(y.split('     '))//gap ka length ekdam specifically dena ha just like yaha 5 ha, and output array k form  me dega
 
 let check = x.split('-')
 console.log(typeof check)

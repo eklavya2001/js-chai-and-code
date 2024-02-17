@@ -10,8 +10,12 @@ const dc=["superman","flash","batman"]
 let allHeros=marvel_heros.concat(dc)//so this is how we join two arrays, and combine in new(concat use kiye idhar bhi but yaha ek variable me store kiye ha)
 console.log(allHeros)
 
+// let x = marvel_heros.push(dc)
+// console.log(x)
+
 const all_new_heros = [...marvel_heros, ...dc]// ye ha spread operator jo object ko copy karna ke bhi kaam aata ha
 console.log(all_new_heros)
+
 
 const another_array= [1,2,3,[4,5,6],7,[6,7,[4,5]]]
 const real_another_array=another_array.flat(/*yaha tum depth de sakte ho */ Infinity)

@@ -6,7 +6,7 @@
 
 // js is a dynamically typed language
 
-const id =Symbol('123')
+const id =Symbol('123')         // symbols are different from each other, irrespective of their equal values
 const anotherId = Symbol('123')
 console.log(id)
 console.log(anotherId)
@@ -28,5 +28,5 @@ console.log(z)
 
 
 /*
-jitna bhi non-primitive ha uska typeof object hi milta ha and for primitive use documentation
+jitna bhi non-primitive ha uska typeof object hi milta ha(mostly) and for primitive use documentation
  */
