@@ -25,7 +25,7 @@ console.log(typeof score);
 
  console.log(typeof valueInNumber)//this will say its a number 
 
- console.log(valueInNumber);// but this will give nan
+ console.log(valueInNumber);// but this will give nan, therefore ye bcgiri dekh lena
 
  let a= undefined;
  console.log(a)//undefined dega, simili

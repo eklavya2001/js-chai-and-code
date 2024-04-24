@@ -3,6 +3,8 @@ const score =400
 const balance = new Number(100)
 console.log(balance)
 console.log(typeof balance)
+const n = Number(balance)
+console.log(typeof n)
 console.log(balance.toString().length)//agar tum string bana doge to har wo kam kar paoge jo string ka sath karte ho
 
 console.log(balance.toFixed(2)) 

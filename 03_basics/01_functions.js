@@ -16,17 +16,16 @@ console.log("a")
 
 }
 
-//sayMyName()
+sayMyName()
 
-// function addTwoNumbers(number1,number2){  //small bracket ke andar jo doge wo hua parameters
-//     console.log(number1+number2)
-// }
-// addTwoNumbers(3,4)//or yaha jo doge wo hua arguments
-// addTwoNumbers(3,"4")
-// addTwoNumbers(3,"a")
-// addTwoNumbers(3,"null")
-
-//const result =addTwoNumbers(3,5)
+function addTwoNumbers(number1,number2){  //small bracket ke andar jo doge wo hua parameters
+    console.log(number1+number2)
+}
+addTwoNumbers(3,4)//or yaha jo doge wo hua arguments
+addTwoNumbers(3,"4")
+addTwoNumbers(3,"a")
+addTwoNumbers(3,"null")
+//const result =  addTwoNumbers(3,5)
 //console.log(result) //ye undefined aayega
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

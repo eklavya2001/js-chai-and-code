@@ -1,5 +1,6 @@
 const marvel_heros=["thor","ironman","spiderman"]
 const dc=["superman","flash","batman"]
+//How to combine two arrays? : concat method use karna ha and naye variable me store karna ha tabhi hoga
 //marvel_heros.push(dc)//ye array k  andar array bana dega and thats a problem for us
 //console.log(marvel_heros)
 //console.log(marvel_heros[3][0]) //ye tarika ha array k andar ke array me se kisi element ko access kar sakte ha but not a good way
@@ -18,11 +19,12 @@ console.log(all_new_heros)
 
 
 const another_array= [1,2,3,[4,5,6],7,[6,7,[4,5]]]
-const real_another_array=another_array.flat(/*yaha tum depth de sakte ho */ Infinity)
+const real_another_array=another_array.flat(/*yaha tum depth de sakte ho */ 1)
 console.log(real_another_array)
 
 
 console.log(Array.isArray("eklavya"))//ye false dega
+//How to convert string to array?
 console.log(Array.from("eklavya"))//ye saare letters ko array ke andar convert kar dega 
 console.log(Array.from({name: "eklavya"}))// interesting case for interviews, ye empty array dega
 

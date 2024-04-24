@@ -32,12 +32,12 @@ const user2={
 }
 console.log(user2["sym"])
 console.log(typeof user2["sym"])// ye string dega and not symbol , therefore aise nahi hoga 
-
+console.log(typeof user2.sym)
 const user3={
     [sym]:"mykey1"
 }
 console.log(user3[sym])
-console.log( typeof user3[sym])
+console.log( typeof user3[sym]) // abhi bhi to string hi de raha ha, kuch gadbad ha
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 user1.email="mankubhaiya@gmail.com"// objects ki values aise change hota ha
@@ -49,6 +49,7 @@ console.log(user1)
 console.log(user3)
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//object k andar k function ko method laga ke hi call karna hota ha
 user1.greeting= function(){console.log("Hello user1")}
 
 console.log(user1.greeting)//idhar function execute nahi hoga sirf reference aayega

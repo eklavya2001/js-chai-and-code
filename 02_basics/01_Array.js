@@ -1,4 +1,6 @@
-//array
+//array : shift , unshift , pop , push , includes , indexOf , slice , splice all are array mehtods
+// shift and unshift are similar like push and pop but from starting
+//arr.join() :- ye array ko string me convert kar dega
 
 const arr= [1,2,3,"false",4,5]//array declare karne ka tarika
 console.log(arr[1])

@@ -32,7 +32,7 @@ if (true) {
 
 //+++++++++++++++++++++++interesting+++++++++++++++++++++++++(javascript me variables super powerful hote , they can hold json, function and many moree)
 
-/*function addone(num){
+function addone(num){
     return num+1
 }
 
@@ -43,15 +43,15 @@ const addTwo= function(num){  // this is also a function but more like an expres
 } 
 addTwo(5)
 
-abhi dono function run ho raha ha bade aaram se but aage dekho*/
+/*abhi dono function run ho raha ha bade aaram se but aage dekho*/
 
 console.log(addone(5)); // ye bhi run ho jayega jab hum is function ka declaration se upar bhi de dein to but , niche dekho
 function addone(num) {
   return num + 1;
 }
 
-addTwo(5); //jab hum isse bhi waise hi karte h tab error aata ha bcoz of hoisting of functions in different ways 
-           //abhi k liye itna samjho ki upar ka case me hum declartion se pehle access kar sakte ha but niche k case me nahi
-const addTwo = function (num) {
-  return num + 2;
-};
+// //addTwo(5); //jab hum isse bhi waise hi karte h tab error aata ha bcoz of hoisting of functions in different ways 
+//            //abhi k liye itna samjho ki upar ka case me hum declartion se pehle access kar sakte ha but niche k case me nahi
+// //const addTwo = function (num) {
+//   return num + 2;
+// };
