@@ -55,5 +55,6 @@ user1.greeting= function(){console.log("Hello user1")}
 console.log(user1.greeting)//idhar function execute nahi hoga sirf reference aayega
 console.log(user1.greeting())// agar freeze kar diye ho to error dega therefore unfreeze kar k dekho, function execute ho jayega
 
-user1.greeting2= function(){console.log( `Hello user1,${this.name}`)}
-console.log(user1.greeting2())
+user1.greeting2= function(){console.log( `Hello user1,${user1.name}`)}
+let x= user1.greeting2();
+if(x){console.log(x)}

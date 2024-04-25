@@ -20,8 +20,7 @@ console.log(1+"2")
 console.log("1"+"2")
 
 console.log("1"+2+2);//this gives 122 which is strange
-console.log(1+2+"2");//this gives 32 as output , ab to shock laga now why this happens(rules/guidelines by ecma script)
-
+console.log(1+2+"2");//this gives 32 as output , ab to
 console.log(+true)//this gives 1s
 
 //console.log(true+) // this is errror

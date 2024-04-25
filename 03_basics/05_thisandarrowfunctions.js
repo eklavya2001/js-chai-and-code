@@ -1,30 +1,30 @@
-const user = {
-    username:"eklavya",
-    price:999,
-
-    welcomeMessage: function(){
-               console.log(` ${this.username}welcome to website`)// but we write this.username for current context and ye imp ha aise hi hona
-    }
-}
-
-user.welcomeMessage() //object k andar k function aise acces karte ha yad rakhna
-console.log(user.username)// and normal variables k liye traditional method
-
- user.username="sam"// ab humne idhar context change kar diya,(context kch nahi ha , values hi ha),
-user.welcomeMessage()
-
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------
 // const user = {
 //     username:"eklavya",
 //     price:999,
 
 //     welcomeMessage: function(){
-//                console.log(`${this.username} welcome to website`)// but we write this.username for current context and ye imp ha aise hi hona
-//                console.log(this)//es this ne hame sare current context k bare me bata diya of both eklavya and sam  
+//                console.log(` ${this.username}welcome to website`)// but we write this.username for current context and ye imp ha aise hi hona
 //     }
 // }
 
+// user.welcomeMessage() //object k andar k function aise acces karte ha yad rakhna
+// console.log(user.username)// and normal variables k liye traditional method
+
+//  user.username="sam"// ab humne idhar context change kar diya,(context kch nahi ha , values hi ha),
 // user.welcomeMessage()
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+const user = {
+    username:"eklavya",
+    price:999,
+
+    welcomeMessage: function(){
+               console.log(`${this.username} welcome to website`)// but we write this.username for current context and ye imp ha aise hi hona
+               console.log(this)//es this ne hame sare current context k bare me bata diya of both eklavya and sam  
+    }
+}
+
+ user.welcomeMessage()
 
 
 // user.username="sam"// ab humne idhar context change kar diya,(context kch nahi ha , values hi ha),
@@ -50,11 +50,11 @@ user.welcomeMessage()
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// function chai(){
-//     let username="eklavya"
-//     console.log(this)// console.log(this.username)  :- ye undefined dega iska matlab ye this.username object me use kar sakte ha but function me undefined dega
-// }
-// chai() //isme bohot sara value aayega,ek global value,microtask , structure clone, perfomance valuation
+function chai(){
+    let username="eklavya"
+    console.log(this)// console.log(this.username)  :- ye undefined dega iska matlab ye this.username object me use kar sakte ha but function me undefined dega
+}
+chai() //isme bohot sara value aayega,ek global value,microtask , structure clone, perfomance valuation
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

@@ -2,7 +2,7 @@
 
 //datatypes are classified :_kis tarah se memory me rakha jata ha or kis tarah se acces kiya jata ha :_primitive  and  non primitive(reference)
 //primitive :- call by value : 7 types:- String, Number, Boolean, null(typeof me ye object deta ha) , undefined, Symbol, BigInt
-// non -primitive(reference types) :- call by name : Array, Objects, Functions.(js master karne k liye objects and web events ka khas khayal rakho)
+// cts and web eventsnon -primitive(reference types) :- call by name : Array, Objects, Functions.(js master karne k liye obje ka khas khayal rakho)
 
 // js is a dynamically typed language
 

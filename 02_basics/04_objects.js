@@ -38,7 +38,8 @@ console.log(obj3)
 
 const obj4=Object.assign(obj1,obj2)// can be combined in both ways (obj4 and 5) but obj5 is better according to the documentation and gives the same output as spread operator
 const obj5=Object.assign({},obj1,obj2)// jo empty parenthisis ha wo target ha or baki ha source waise compulsory nahi ha
-
+console.log(obj4)
+console.log(obj5)
 
 // jab bhi database se values aayegi
 
@@ -69,7 +70,7 @@ const course={
     courseInstructor:"eklavya"
 
 }
-// course.courseInstructor
+//console.log(course.courseInstructor) 
 
 const{courseInstructor}=course
 console.log(courseInstructor)

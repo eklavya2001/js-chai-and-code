@@ -4,9 +4,10 @@
 
 const arr= [1,2,3,"false",4,5]//array declare karne ka tarika
 console.log(arr[1])
+console.log(typeof arr)
 const myHeros=["shaktiman","nagraj"]
 const arr2=new Array(1,3,5)//declare karne ka dusra tarika
-
+console.log(typeof arr2)
 //Array methods
 arr.push(6)//ye last me jorega 
 console.log(arr)

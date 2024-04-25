@@ -36,4 +36,4 @@ console.log(x.split('-'))
 console.log(y.split('     '))//gap ka length ekdam specifically dena ha just like yaha 5 ha, and output array k form  me dega
 
 let check = x.split('-')
-console.log(typeof check)
+console.log(typeof x)
