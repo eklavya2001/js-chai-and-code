@@ -6,22 +6,23 @@ const coding=["js", "java", "python ","ruby", "cpp"]
 
 const values =coding.forEach((item)=>{// console.log(item);  // abhi bhi undefined hi dega
     return item})
-   // console.log(values)
+  // console.log(values)
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    const myNums=[1,2,3,4,5,6,7,8,9,10]
- //  myNums.filter( (num)=> num>4) // for each jaisa hi operation ha, but ye values ko return karta ha
+ let n= myNums.filter( (num)=> num>4) // for each jaisa hi operation ha, but ye values ko return karta ha
+ console.log(n)
 
 
-//  const newNums=  myNums.filter( (num)=> num>4)           
-//  console.log(newNums) // ye return karega [5,6,7,8,9,10]
+ const newNums=  myNums.filter( (num)=> num>4)           
+ console.log(newNums) // ye return karega [5,6,7,8,9,10]
 // // jab bhi hum filter use karte ha, to filter k andar aapko ek callback function milega, jiske andar har value ko each access kiya jayega,
 // or uske baad aapko deni padti ha ek conditon, jo jo log us condition ko satisfy karenge, wo wo vlaues to return ki jayegi warna nahi hogi retunr
 
 
 
- //const newNums=  myNums.filter( (num)=>{ num>4}) 
- //console.log(newNums) // ye ek empty [] return kar deta ha, pata nahi kyun?, iska alternate niche dekho
+//  const newNums=  myNums.filter( (num)=>{ num>4}) 
+//  console.log(newNums) // ye ek empty [] return kar deta ha, pata nahi kyun?, iska alternate niche dekho
 
 //  const newNums=  myNums.filter( (num)=>{  return num>4}) 
 //  console.log(newNums) //ab upar wala problem solve hua , is bar {return num>4}
@@ -53,7 +54,7 @@ const Books =[
    {title:"Book10",genre:"NonFiction",publish: 1994 , edition:2024}
 ]
 
-let UserBooks=Books.filter((bk)=>bk.genre==="History")
+// let UserBooks=Books.filter((bk)=>bk.genre==="History")
 
-UserBooks=Books.filter((bk)=>{return bk.genre==="Science"&&bk.publish>=2000})  // whenever we use scope we have to mention return , and this is how filter returns output
-console.log(UserBooks)
+// UserBooks=Books.filter((bk)=>{return bk.genre==="Science"&&bk.publish>=2000})  // whenever we use scope we have to mention return , and this is how filter returns output
+// console.log(UserBooks)

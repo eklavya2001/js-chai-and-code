@@ -15,3 +15,14 @@ const newNums=myNumbers.map((num)=>num*10).map((num)=>num+1).filter((num)=>num>=
 
 const newNumbers=myNumbers.filter((num)=>num+10)// as num+10 is always true  therfore it prints whole of myNumbers and does no operation, therfore don't confuse bw map and filter
 console.log(newNumbers)
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Yes, exactly! "Map" and "map" are indeed different in JavaScript.
+
+// Map (with uppercase "M"): Refers to the built-in Map object in JavaScript, which is used to store key-value pairs.
+// map (with lowercase "m"): Refers to the built-in array method in JavaScript, which is used to transform elements of an array by applying a function to each element.
+// The uppercase "Map" refers to a specific data structure (the Map object), while the lowercase "map" refers to a specific array method (the map method). They have different functionalities and usage patterns
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------
+

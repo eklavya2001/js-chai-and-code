@@ -18,7 +18,7 @@ for (const key in myObject) {
 const programming =["js", "rb", "py", "java","cpp"]  // arrays me sirf number hi keys hoti ha, or object bana hi isliye tha ki keys sirf number na
 for (const key in programming) {
     // console.log(key)       // yaha key k nam par 0 to 4 print ho jayega
-    // console.log(programming)  // ye to pura array hi print kar dega 5 bar
+     console.log(programming)  // ye to pura array hi print kar dega 5 bar
     console.log(programming[key]) // isse values print hoga
    
 }
