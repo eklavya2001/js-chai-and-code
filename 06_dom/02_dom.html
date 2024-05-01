@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color:grey; color: white;" >
+<div class="parent"> 
+<div class="day">Monday</div>
+<div class="day">Tuesday</div>
+<div class="day">Wednesday</div>
+<div class="day">Thursday</div>
+</div>
+<script>
+     const parent =document.querySelector('.parent')
+    // console.log(parent)
+    // console.log(parent.children)// yaha se html collection milta ha which is almost array like properties
+    // console.log(parent.children[1].innerHTML)
+    // for(let i=0; i<parent.children.length; i++){
+    //     console.log(parent.children[i].innerHTML)
+    // }
+   // parent.children[1].style.color="orange"
+    console.log(parent.firstElementChild)
+    console.log(parent.lastElementChild)
+
+    const day1= document.querySelector('.day')
+    console.log(day1)
+    console.log(day1.parentElement);
+    console.log(day1.nextElementSibling);
+
+    console.log("nodes ; ", parent.childNodes);// ye total 9 nodes dega, because ek enter ko bhi ek node pakadta ha but uske bad k khali enter ko by default discard kar deta ha,
+                                               // abhi ek comment bhi kar du mai inke bich me tab total nodes 11 ho jayenge, ye hota h bcoz node list trees(ds, we drew the diagram) k form me hota ha
+</script>
+</body>
+</html>

@@ -26,3 +26,4 @@ console.log(nayaDate.getMonth())
 
 
 console.log(nayaDate.toLocaleString('default',{weekday:"long"}))//customize karke date and time likhne ka tarika, we shall remember this.
+

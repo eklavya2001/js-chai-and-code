@@ -54,7 +54,7 @@ const Books =[
    {title:"Book10",genre:"NonFiction",publish: 1994 , edition:2024}
 ]
 
-// let UserBooks=Books.filter((bk)=>bk.genre==="History")
+ let UserBooks=Books.filter((bk)=>bk.genre==="History")
 
 // UserBooks=Books.filter((bk)=>{return bk.genre==="Science"&&bk.publish>=2000})  // whenever we use scope we have to mention return , and this is how filter returns output
-// console.log(UserBooks)
+ console.log(UserBooks)
