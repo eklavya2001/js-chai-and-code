@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+h1{
+    display: inline;
+    background-color: yellow;
+    position: relative;
+    left: 750px;
+    
+    border: 2px solid red;
+    border-radius: 5px;
+
+    
+}
+#box1{
+    background-color: red;
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    
+}
+#box2{
+    background-color: blue;
+    display: inline;
+    position: relative;
+    cursor: pointer;
+
+}
+#box3{
+    background-color: green;
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
+#box4{
+    background-color: yellow;
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
