@@ -13,12 +13,45 @@
 <script>
     function addLanguage(langname){
        const li= document.createElement('li');
-       li.innerHTML=`${langname}`
+       li.innerHTML=`${langname}` // ye tarika theek h , but not good approach as we have to traverse the whole tree therefore niche dekho
        document.querySelector('.language').
        appendChild(li)
-       document.body.appe
+       
 
     }
     addLanguage('python')
+    addLanguage('typescript')
+
+    function addOptiLanguage(langname){
+       const li=document.createElement('li')
+       li.appendChild(document.createTextNode(langname))// this is a good practice for production level code
+       document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+    // ab bat karenge edit and remove ki
+
+    const secondLang=document.querySelector("li:nth-child(2)")
+   // secondLang.innerHTML="mojo"// again aisa kar sakte ha, but not good approach
+    console.log(secondLang)
+    // secondLang.innerHTML="mojo"
+    const newli=document.createElement('li')
+    newli.textContent="jojo"
+    secondLang.replaceWith(newli)
+
+    // edit
+    const  firstLang= document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>Typescript</li>'
+
+    //remove
+
+    const lastlang=document.querySelector('li:last-child')
+    lastlang.remove()
+  
+    
+
+
+    
+
 </script>
 </html>
