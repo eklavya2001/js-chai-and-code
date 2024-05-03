@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: gray;
+}
+h1{
+    display: inline;
+    position: relative;
+    left: 50%;
+}
+#mainbox{
+    display:inline-block;
+    background-color: black;
+    display: inline;
+    position: relative;
+    left: 50%;
+    
+}
+#calculate{
+    position: relative;
+    left:100px ;
+}
+#height{
+    position: relative;
+    left:50px ;
+}
+#weight{
+    position: relative;
+    left: 63px ;
+}
+#output{
+    display: inline-block;
+    border: 2px solid yellow;
+    position: absolute;
+    left: 50%;
+
+}
+#guide{
+    display: inline-block;
+    border: 4px solid black;
+    position: relative;
+    left: 50%;
+}

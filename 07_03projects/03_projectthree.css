@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: grey;
+}
+#clock{
+display: inline-block;
+position: relative;
+left: 50vw;
+border: 4px solid black;
+}

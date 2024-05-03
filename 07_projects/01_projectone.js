@@ -1,8 +1,0 @@
-const one=document.getElementById('box1')
-one.addEventListener('click',()=>{document.body.style.backgroundColor='red'})
-const two=document.getElementById('box2')
-two.addEventListener('click',()=>{document.body.style.backgroundColor='blue'})
-const three=document.getElementById('box3')
-three.addEventListener('click',()=>{document.body.style.backgroundColor='green'})
-const four=document.getElementById('box4')
-four.addEventListener('click',()=>{document.body.style.backgroundColor='yellow'})
