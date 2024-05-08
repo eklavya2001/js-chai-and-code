@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <a style="color: aliceblue;" href="https://googl" id="google">Google</a>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){    // not a good practice , features kam milte ha
+    //     alert("owl clicked")
+    // }
+
+     // attachEvent()  // ye pehle use hua karta tha
+    // jQuery - on     // react k hi tarah jquery hota ha, usme ye method use hota tha
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,    // ye saare kuch imp method ha event('e') ka , waise bohot sara h jitna jano utna hi accha ha
+    // clientX, clientY, screenX, screenY               
+    // altkey, ctrlkey, shiftkey, keyCode              // har keyboard key ka ek , keycode hota ha and use hi use karke typing test type application ban pata ha
+    
+    // document.getElementById('images').addEventListener('click', function(e){
+        //     console.log("clicked inside the ul");
+        // }, false)        // ye jo false ha wo default hota(ye event bubbling ko promote karta ha), and if ye true ho jaye to event capturing ko promote karta ha
+
+        
+        
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+    // ab dekho ul ka jo id ha wo images h to , jab bhi upar ka upar wala event listner kam karega , tab log hoga "clicked inside the ul" 
+    // but jab bhi 'owl' id wala image pe click hoga tab dono chiz log hoga , "clicked inside the ul" and "owl clicked" but pehle konsa hoga or bad me konsa hoga yahi define karta ha event bublling
+    // event bubbling kehta h, pehle "owl clicked " log hoga and then phir "clicked inside the ul " log hoga or event bublling ko promote karta h event(e) ka default value i.e false
+    // but if wo false k jagah tum true de doge to vice versa log hoga yaad rakhna, ie event capturing.
+    // ab dekho dono hi cheez theek h, but use case pe depend karega
+    // or dekho bubbling yani expand karna, ab tumhara man h ki sirf "owl clicked" to tum 'owl' id ka expansion rok do by adding e.stopPropagation()
+    
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();// ye google ko load hi nahi lene dega
+       //e.stopPropagation()//or isse to tumhe pata hi ha, ki ab sirf log hoga "google clicked", or "clicked inside the ul" ko rok dega ie bubbling ko rokk dega
+        console.log("google clicked");
+    }, false)
+   
+    // accha ab ye ek chota sa project banana ha ki jis image pe click kare  wo image gayab ho jaye
+
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        
+        
+        let removeIt = e.target.parentNode
+        console.log(e.target.parentNode)
+        removeIt.remove()
+    
+        
+    })
+
+    
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.tagName);
+    //     if (e.target.tagName === 'IMG') {
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //     }
+    
+        
+    // })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>

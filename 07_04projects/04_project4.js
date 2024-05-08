@@ -14,11 +14,11 @@ b.addEventListener('click',function abc(){
 
     let d=document.getElementById('hint')
     if(a>random){
-        d.innerHTML="thora kam kar le bhai"
+        d.innerHTML=`thora kam kar le bhai,sirf ${7-x} attempt bache hue ha`
         
     }
     else if(a<random){
-        d.innerHTML="thora badha le bhai"
+        d.innerHTML=`thora badha le bhai ,sirf ${7-x} attempt bache hue ha`
         
     }
     else if(a==random ){
@@ -27,7 +27,7 @@ b.addEventListener('click',function abc(){
     }
      
     else{
-        d.innerHTML="bhai tu kar kya raha ha"
+        d.innerHTML=`bhai tu kar kya raha ha ,sirf ${7-x} attempt bache hue ha`
         
     }
     if(x==7){d.innerHTML="o bas kar bhai, max ho gaya"
